@@ -1,0 +1,136 @@
+void main() {
+  int time = 20;
+  double energy = 100.25;
+  String workdone = ("The workdone in moving the cart is $energy Joules at $time seconds");
+  print (workdone);
+  String power = ("The power exerted to move the cart is ${energy / time} Watts");
+  print (power);
+  
+  double powerful = 5.25 + 3.25;
+  if (powerful < 10) {
+    print("It takes minimal power to be exerted for the movement of the cart");
+  }
+  
+  int displacement = 10;
+  String velocity = ("The velocity of moving the cart is ${displacement / time} m/s");
+  print (velocity);
+  
+  double speed = displacement / time;
+  print (speed);
+  if (speed > 1) {
+    print ("The speed during the movement of the cart is huge");
+  }
+  else {
+    print ("The speed during the movement of the cart is little");
+  }
+  
+  double force = energy / displacement;
+  print (force);
+  if (force > 75) {
+    print ("The force needed to move the cart is massive");
+  }
+  else if (force < 50) {
+    print ("The force needed to move the cart is average");
+  }
+  else {
+    print ("The force needed to  move the cart is infinity");
+  }
+  
+  
+  bool b = true;
+  if (!b) {
+    print ("True");
+  } else {
+    print ("False");
+  }
+  
+  
+  if (!(energy > 80)) {
+    print ("\"It's minimal energy required.\" She said");
+  }
+  
+  
+ String favoriteAnimal = ("hen");
+  switch (favoriteAnimal) {
+    case "dog":
+      print ("Bark");
+      break;
+    case "cow":
+      print ("Moo");
+      break;
+    case "cat":
+      print ("Meow");
+      break;
+    default:
+      print ("Your animal is an unknown species to me");
+      
+  }
+  
+  int digit = 15;
+  switch (digit) {
+    case 1:
+    case 3:
+    case 5:
+    case 7:
+    case 9:
+    case 11:
+      print ("It's an odd number");
+      break;
+    case 2:
+    case 4:
+    case 6:
+    case 8:
+    case 10:
+    case 12:
+      print ("It's an even number");
+      break;
+    default:
+      print ("This digit can't be recognized");
+  }
+  
+  int beersonTheWall = 5;
+  while (beersonTheWall > 0) {
+    print ("$beersonTheWall bottles of beers are in the crate. Pass around ${beersonTheWall - 1}");
+    beersonTheWall--;
+  }
+  
+  
+  int eggsinTheBowl = 5;
+  do {
+    print ("$eggsinTheBowl eggs are in the crate. Take down ${eggsinTheBowl - 1} eggs from the crate and leave the rest");
+    eggsinTheBowl--;
+  }while (eggsinTheBowl > 0);
+  
+  
+  for (int ballsinThePitch = 5; ballsinThePitch>0; ballsinThePitch--) {
+    print ("$ballsinThePitch balls are in the pitch. Take out ${ballsinThePitch-1} balls and leave the rest");
+  }
+  
+  
+  int totalballs = 0;
+  for (int blueballs = 1; blueballs <= 5; blueballs ++ ) {
+    totalballs = totalballs + blueballs;
+  }
+  print ("There are $totalballs balls in the field");
+  
+  
+  for (int redball = 1; redball <=5; redball ++) {
+    int powerTotal = 1;
+    for (int greenball = 1; greenball <=5; greenball ++) {
+      powerTotal = powerTotal * redball;
+      print ("${redball+greenball} is $powerTotal");
+    }
+  }
+  
+  
+  for (int x=1; x<=10; x++) {
+    for (int y=1; y<=10; y++) {
+      int xx = x*y;
+      int yy = y*x;
+      print ("${xx}, ${yy}");
+    }
+  }
+  
+  
+  
+}
